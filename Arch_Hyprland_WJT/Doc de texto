@@ -1,0 +1,5 @@
+﻿La mayoria es con punto al principio, ver de cambiar le el nombre y agregarle el punto delante.
+
+* La carpeta config, es .config.
+
+* La ruta de las carpetas esta dentro de usuario, salvo waybar que va dentro de xdg.

@@ -1,0 +1,1779 @@
+: 1743504795:0;git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k\
+
+: 1743504804:0;nano ~/.zshrc\
+
+: 1743504822:0;source ~/.zshrc\
+
+: 1743504889:0;sudo pacman -S ttf-fira-code\
+
+: 1743504898:0;yay -S ttf-firacode-nerd\
+
+: 1743504938:0;nano ~/.zshrc\
+
+: 1743504967:0;source ~/.zshrc\
+
+: 1743504977:0;git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions\
+
+: 1743504980:0;source ~/.zshrc\
+
+: 1743504991:0;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting\
+
+: 1743505002:0;nano ~/.zshrc\
+
+: 1743505025:0;source ~/.zshrc\
+
+: 1743505045:0;nano ~/.p10k.zsh\
+
+: 1743505111:0;source ~/.zshrc\
+
+: 1743505291:0;sudo pacman -S ranger\
+
+: 1743505296:0;ranger
+: 1743505338:0;sudo pacman -S w3m\
+
+: 1743505342:0;ranger
+: 1743505367:0;nano ~/.config/ranger/rc.conf\
+
+: 1743505384:0;ranger
+: 1743505440:0;w3m -v\
+
+: 1743505819:0;exit
+: 1743505860:0;chsh -s $(which zsh)\
+
+: 1743505868:0;sudo chsh -s $(which zsh)\
+
+: 1743505881:0;exit
+: 1743505915:0;echo $SHELL\
+
+: 1743505940:0;which zsh\
+
+: 1743505956:0;exit
+: 1743520725:0;glxinfo | grep "OpenGL"\
+vulkaninfo\
+
+: 1743520755:0;winetricks dxvk\
+
+: 1743520780:0;winetricks d3dx9 vcrun2015 corefonts\
+
+: 1743521160:0;sudo pacman -S winetricks
+: 1743521200:0;WINEPREFIX=~/.wine winetricks\
+
+: 1743521237:0;WINEPREFIX=~/.wine winetricks --force directx9\
+
+: 1743521274:0;WINEPREFIX=~/.wine winetricks d3dx9 d3dx10 d3dx11\
+
+: 1743521329:0;winetricks --version\
+
+: 1743521365:0;WINEPREFIX=~/.wine winetricks d3dx9\
+WINEPREFIX=~/.wine winetricks d3dx10\
+WINEPREFIX=~/.wine winetricks d3dx11\
+
+: 1743521401:0;reboot
+: 1743521750:0;WINEPREFIX=~/.wine WINEDLLOVERRIDES="d3d11,d3d10,d3d9=n" wine DeadCells.exe\
+
+: 1743522006:0;vulkaninfo | grep "Vulkan Instance Version"\
+
+: 1743522050:0;sudo pacman -S vulkan-loader vulkan-tools mesa-vulkan-drivers\
+
+: 1743522082:0;sudo pacman -S mesa vulkan-intel lib32-vulkan-intel\
+
+: 1743522124:0;sudo pacman -S vulkan-icd-loader vulkan-tools vulkan-validation-layers\
+
+: 1743522139:0;vulkaninfo | grep "Vulkan Instance Version"\
+
+: 1743522146:0;vkcube\
+
+: 1743522154:0;sudo pacman -S vulkan-tools\
+
+: 1743522160:0;vkcube\
+
+: 1743522196:0;lspci | grep -i vga\
+
+: 1743522214:0;lspci -k | grep -EA3 'VGA|3D'\
+
+: 1743522224:0;glxinfo | grep "OpenGL renderer string"\
+
+: 1743522234:0;pacman -Q | grep vulkan\
+
+: 1743522275:0;sudo pacman -S mesa vulkan-intel lib32-vulkan-intel vulkan-icd-loader vulkan-tools vulkan-validation-layers\
+
+: 1743522299:0;export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/lvp_icd.x86_64.json\
+export VK_LAYER_PATH=/usr/share/vulkan/explicit_layer.d\
+vulkaninfo\
+
+: 1743522306:0;export MESA_LOADER_DRIVER_OVERRIDE=zink\
+glxinfo | grep "OpenGL renderer"\
+
+: 1743522319:0;sudo cpupower frequency-set -g performance\
+
+: 1743522327:0;sudo pacman -S mesa-utils\
+
+: 1743522769:0;sudo pacman -S wine\
+sudo pacman -S lib32-mesa lib32-vulkan-icd-loader
+: 1743522904:0;export WINEPREFIX=~/.wine  # o el directorio donde tengas tu prefijo de Wine\
+export WINEOPENGL=opengl\
+
+: 1743522911:0;WINEPREFIX=~/.wine winecfg\
+
+: 1743522980:0;glxinfo | grep "OpenGL"\
+
+: 1743522988:0;winetricks opengl\
+
+: 1743522999:0;sudo pacman -S wine-wayland\
+
+: 1743523013:0;ls
+: 1743523023:0;cd /mnt/sdb1
+: 1743523024:0;ls
+: 1743523032:0;cd Games\ Linux\ \(Wine-otros\)
+: 1743523050:0;ls -la
+: 1743523057:0;cd DEAD\ CELLS
+: 1743523058:0;ls
+: 1743523065:0;ls -la
+: 1743523077:0;ls
+: 1743523117:0;wine deadcells.exe
+: 1743523141:0;wine deadcells
+: 1743537094:0;ls
+: 1743537113:0;cd /mnt/sdb1
+: 1743537115:0;ls
+: 1743537199:0;nvim ~/.p10k.zsh
+: 1743537384:0;nvim ~/.config/kitty/kitty.conf
+: 1743537401:0;cd ~/.config/kitty/
+: 1743537402:0;ls
+: 1743537527:0;cd ..
+: 1743537529:0;ls
+: 1743537537:0;cd /
+: 1743537539:0;ls
+: 1743537544:0;ls -la
+: 1743537557:0;cd /home/waltjt/
+: 1743537559:0;ls -la
+: 1743537569:0;code .zshrc
+: 1743537656:0;code ~/.p10k.zsh
+: 1743538037:0;source ~/.p10k.zsh
+: 1743538053:0;cd /mnt/sdb1
+: 1743538054:0;ls
+: 1743538068:0;cd /mnt/sdb1
+: 1743538069:0;ls
+: 1743538143:0;cd /mnt/sdb1
+: 1743538145:0;ls
+: 1743538344:0;cd /home/waltjt/
+: 1743538346:0;ls
+: 1743538349:0;ls -la
+: 1743538390:0;code .zshrc.pre-oh-my-zsh
+: 1743538426:0;code .bashhrc
+: 1743538440:0;code .bashrc
+: 1743538892:0;cd /home/waltjt/
+: 1743538893:0;ls
+: 1743538897:0;ls -la
+: 1743538904:0;cd /mnt/sdb1
+: 1743538906:0;ls
+: 1743538927:0;source ~/.zshrc
+: 1743538957:0;ls
+: 1743538970:0;source ~/.zshrc
+: 1743538972:0;ls
+: 1743539138:0;source ~/.zshrc
+: 1743539141:0;ls
+: 1743539695:0;source ~/.zshrc
+: 1743551507:0;ls
+: 1743551527:0;ls
+: 1743551596:0;source .zshrc
+: 1743551611:0;source .zshrc
+: 1743551622:0;cd /mnt/sdb1
+: 1743551623:0;ls
+: 1743551646:0;source ~/.zshrc
+: 1743551650:0;ls
+: 1743551718:0;# source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+: 1743551720:0;ls
+: 1743551764:0;rm -rf ~/.zsh/zsh-syntax-highlighting 
+: 1743551767:0;ls
+: 1743551782:0;source ~/.zshrc
+: 1743551784:0;ls
+: 1743551940:0;echo $ZSH_HIGHLIGHT_STYLES
+: 1743552096:0;source ~/.zshrc
+: 1743552148:0;sed -i 's/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/plugins=(git zsh-autosuggestions)/g' ~/.zshrc
+: 1743552158:0;sed -i '/source.*zsh-syntax-highlighting.zsh/s/^/#/' ~/.zshrc
+: 1743552169:0;rm -rf ~/.oh-my-zsh/plugins/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
+: 1743552183:0;source ~/.zshrc
+: 1743552186:0;ls
+: 1743552678:0;source ~/.zshrc
+: 1743552687:0;ls
+: 1743552709:0;source ~/.zshrc
+: 1743552772:0;ls
+: 1743552818:0;echo $PWD
+: 1743552906:0;source ~/.zshrc
+: 1743552908:0;ls
+: 1743552992:0;clear
+: 1743553097:0;grep -r "POWERLEVEL9K_DIR_FOREGROUND" ~/.zshrc ~/.p10k.zsh
+: 1743553136:0;source ~/.zshrc
+: 1743553144:0;ls
+: 1743553164:0;cd ..
+: 1743553168:0;ls
+: 1743553193:0;source ~/.zshrc
+: 1743553259:0;cd /mnt/sdb1
+: 1743553261:0;zsh -xv 
+: 1743553341:0;ls
+: 1743553457:0;git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions\
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+: 1743553543:0;kitty +kitten themes --reload-in=all "Alucard"
+: 1743553547:0;ls
+: 1743553584:0;sudo pacman -S ttf-firacode-nerd
+: 1743553649:0;git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
+: 1743553714:0;sudo pacman -S tmux
+: 1743553818:0;ls
+: 1743553822:0;cd /mnt/sdb1
+: 1743553825:0;ls
+: 1743553831:0;cd ..
+: 1743553834:0;cd /
+: 1743554864:0;sudo pacman -S feh
+: 1743555003:0;killall -USR1 kitty
+: 1743555641:0;flatpak run io.github.mimbreo.WhatsAppDesktop
+: 1743624951:0;sudo pacman -S picom
+: 1743625089:0;sudo pacman -S wbg
+: 1743625094:0;sudo pacman -S wgb
+: 1743625102:0;sudo pacman -S wbg
+: 1743625314:0;kitty +kitten themes --reload-in=all "Brogramer"
+: 1743625356:0;kitty +kitten themes --reload-in=all "Brogrammer"
+: 1743625439:0;kitty +kitten themes --reload-in=all "Alucard"
+: 1743625474:0;kitty +kitten themes --reload-in=all "Argonaut"
+: 1743625798:0;kitty +kitten themes --reload-in=all "Alucard"
+: 1743626611:0;sudo pacman -S swaylock
+: 1743637847:0;ranger
+: 1743637935:0;sudo pacman -S w3m ueberzug
+: 1743637942:0;ranger
+: 1743637963:0;nano ~/.config/ranger/rc.conf
+: 1743638027:0;nano ~/.zshrc
+: 1743638074:0;source ~/.zshrc
+: 1743638079:0;ranger
+: 1743638135:0;nano ~/.config/ranger/rc.conf
+: 1743638148:0;ranger
+: 1743638172:0;sudo pacman -S python
+: 1743638229:0;ranger
+: 1743638237:0;nano ~/.config/ranger/rc.conf
+: 1743638271:0;ranger
+: 1743638282:0;ra
+: 1743638286:0;ranger
+: 1743638317:0;sudo pacman -Rns ranger
+: 1743638342:0;sudo pacman -S ranger
+: 1743638347:0;ranger
+: 1743638392:0;nano ~/.zshrc
+: 1743638403:0;ranger
+: 1743638462:0;nano ~/.config/ranger/rc.conf
+: 1743638476:0;ranger
+: 1743638510:0;sudo pacman -Rns ranger
+: 1743638543:0;ranger
+: 1743638555:0;yay -S ranger.git
+: 1743638560:0;yay -S ranger-git
+: 1743638604:0;ranger
+: 1743638752:0;yay -Rns ranger-git
+: 1743638772:0;sudo pacman -S nnn
+: 1743638778:0;nnn
+: 1743638808:0;sudo pacman -Rns nnn
+: 1743638820:0;sudo pacman -Rns yazi
+: 1743638829:0;yay -S yazi
+: 1743638841:0;yazi
+: 1743639170:0;nano ~/.zshrc
+: 1743639263:0;l
+: 1743639337:0;nano ~/.zshrc
+: 1743648418:0;source ~/.zshrc
+: 1743648492:0;nano ~/.zshrc
+: 1743648524:0;source ~/.zshrc
+: 1743648598:0;nano ~/.zshrc
+: 1743648621:0;source ~/.zshrc
+: 1743648647:0;nano ~/.zshrc
+: 1743648692:0;source ~/.zshrc
+: 1743648710:0;nano ~/.zshrc
+: 1743648791:0;source ~/.zshrc
+: 1743648896:0;l
+: 1743648900:0;source ~/.zshrc
+: 1743648908:0;ls
+: 1743648919:0;la
+: 1743648990:0;clear
+: 1743648995:0;l
+: 1743649031:0;source ~/.zshrc
+: 1743649043:0;clear
+: 1743649105:0;showkey -a
+: 1743649354:0;source ~/.zshrc
+: 1743649577:0;sudo pacman -S tmux
+: 1743649630:0;source ~/.zshrc
+: 1743649657:0;tmux
+: 1743649706:0;sudo pacman -Rns tmux
+: 1743649745:0;showkey -a
+: 1743649834:0;source ~/.zshrc
+: 1743649903:0;sudo pacman -S tmux
+: 1743649922:0;code ~/.tmux.conf
+: 1743649943:0;tmux source-file ~/.tmux.conf
+: 1743650007:0;source ~/.zshrc
+: 1743650183:0;AA
+: 1743651692:0;paru -S youtube-music-desktop-bin
+: 1743651702:0;yay -S youtube-music-desktop-bin
+: 1743651750:0;sudo pacman -S --needed base-devel git
+: 1743651800:0;sudo pacman -S debtap\
+debtap -u\
+debtap YouTube-Music.deb\
+sudo pacman -U *.pkg.tar.zst
+: 1743651907:0;sudo pacman -S --needed base-devel git\
+git clone https://aur.archlinux.org/debtap.git\
+cd debtap\
+makepkg -si
+: 1743651927:0;sudo debtap -u
+: 1743652033:0;cd /
+: 1743652034:0;ls
+: 1743652062:0;sudo ~/
+: 1743652069:0;sudo ~
+: 1743652076:0;cd ~
+: 1743652079:0;ls
+: 1743652087:0;cd Descargas
+: 1743652088:0;ls
+: 1743652133:0;sudo debtap pilasbloques_2.6.3_amd64.deb
+: 1743652327:0;sudo pacman -Sy 
+: 1743652353:0;yay -Ss piasbloques
+: 1743652361:0;yay -Ss pilasbloques
+: 1743652388:0;flatpak install fathub org.ejemplo.piasbloques
+: 1743652417:0;sudo debtap -u
+: 1743652467:0;sudo debtap piasbloques_2.6.3_amd64.deb
+: 1743652471:0;ls
+: 1743652577:0;source ~/.zshrc
+: 1743652754:0;l
+: 1743652812:0;flatpak search pilasbloques
+: 1743652868:0;sudo pacman -S docker
+: 1743652989:0;cd Descargas
+: 1743652991:0;ar x pilasbloques_2.6.3_amd64.deb\
+tar -xvf data.tar.xz 
+: 1743653008:0;mkdir pkg-build\
+cp -r usr opt pkg-build/\
+cd pkg-build\
+cat > PKGBUILD <<EOF\
+pkgname=pilasbloques\
+pkgver=2.6.3\
+pkgrel=1\
+arch=('x86_64')\
+source=("file:///ruta/a/pilasbloques_2.6.3_amd64.deb")\
+package() {\
+  cp -r "$srcdir"/usr "$pkgdir"/\
+}\
+EOF
+: 1743653057:0;mkdir pkg-build\
+cp -r usr opt pkg-build/\
+cd pkg-build\
+cat > PKGBUILD <<EOF\
+pkgname=pilasbloques\
+pkgver=2.6.3\
+pkgrel=1\
+arch=('x86_64')\
+source=("file:///home/waltjt/Descargas/pilasbloques_2.6.3_amd64.deb")\
+package() {\
+  cp -r "$srcdir"/usr "$pkgdir"/\
+}\
+EOF
+: 1743653497:0;xs ..
+: 1743653499:0;cd ..
+: 1743653503:0;mkdir pkg-build\
+cp -r usr opt pkg-build/\
+cd pkg-build\
+cat > PKGBUILD <<EOF\
+pkgname=pilasbloques\
+pkgver=2.6.3\
+pkgrel=1\
+arch=('x86_64')\
+source=("file:///home/waltjt/Descargas/pilasbloques_2.6.3_amd64.deb")\
+package() {\
+  cp -r "$srcdir"/usr "$pkgdir"/\
+}\
+EOF
+: 1743653590:0;mkdir pkg-build\
+cp -r usr pkg-build/  # Solo copia 'usr' si 'opt' no existe\
+cd pkg-build
+: 1743653603:0;cat > PKGBUILD <<EOF\
+pkgname=pilasbloques\
+pkgver=2.6.3\
+pkgrel=1\
+pkgdesc="PilasBloques, entorno de programaciÃ³n para aprender"\
+arch=('x86_64')\
+source=("file:///home/waltjt/Descargas/pilasbloques_2.6.3_amd64.deb")\
+package() {\
+  cp -r usr "\$pkgdir"/\
+  # Si hay Ã­cono en /usr/share/pixmaps\
+  install -Dm644 usr/share/pixmaps/pilasbloques.png "\$pkgdir"/usr/share/pixmaps/pilasbloques.png\
+}\
+EOF
+: 1743653615:0;makepkg -si
+: 1743653670:0;cd ~/Descargas\
+md5sum pilasbloques_2.6.3_amd64.deb\
+sha256sum pilasbloques_2.6.3_amd64.deb
+: 1743653685:0;cat > PKGBUILD <<'EOF'\
+pkgname=pilasbloques\
+pkgver=2.6.3\
+pkgrel=1\
+pkgdesc="Entorno de programaciÃ³n para aprender"\
+arch=('x86_64')\
+source=("file:///home/waltjt/Descargas/pilasbloques_2.6.3_amd64.deb")\
+md5sums=('XXXXXX')  # Reemplaza con tu md5sum\
+sha256sums=('XXXXXX')  # Reemplaza con tu sha256sum\
+\
+package() {\
+  # Extraer el .deb\
+  ar x "$srcdir"/pilasbloques_2.6.3_amd64.deb\
+  tar -xvf data.tar.xz -C "$pkgdir"\
+\
+  # Corregir permisos (opcional)\
+  find "$pkgdir" -type d -exec chmod 755 {} \;\
+  find "$pkgdir" -type f -exec chmod 644 {} \;\
+  chmod 755 "$pkgdir"/usr/bin/*\
+}\
+EOF
+: 1743653691:0;makepkg -si
+: 1743653722:0;clear
+: 1743653726:0;clearls
+: 1743653727:0;ls
+: 1743653771:0;rm -rf control.tar.xz data.tar.xz debian-binary pkg
+: 1743653797:0;rm -rf control.tar.xz data.tar.xz debian-binary pkg-build PKGBUILD src usr
+: 1743653799:0;ls
+: 1743653812:0;sudo pacman -S docker
+: 1743653879:0;sudo pacman -S debootstrap\
+sudo mkdir /debian\
+sudo debootstrap stable /debian http://deb.debian.org/debian
+: 1743654225:0;sudo chroot /debian\
+apt update\
+apt install -y ./pilasbloques_2.6.3_amd64.deb\
+exit
+: 1743654252:0;sudo chroot /debian\
+apt update\
+apt install -y ./pilasbloques_2.6.3_amd64.deb
+: 1743654270:0;sudo chroot /debian
+: 1743654297:0;ls
+: 1743654321:0;sudo pacman -S debootstrap
+: 1743654338:0;sudo mkdir /debian
+: 1743654350:0;cd /debian
+: 1743654351:0;ls
+: 1743654366:0;sudo debootstrap stable /debian http://deb.debian.org/debian
+: 1743654391:0;sudo chroot /debian
+: 1743654459:0;sudo chroot /debian ls /bin/sh
+: 1743654479:0;sudo chroot /debian /bin/sh
+: 1743654530:0;sudo pacman -S arch-install-scripts
+: 1743654541:0;sudo arch-chroot /debian
+: 1743654600:0;sudo chroot /debian dpkg -i /path/to/pilasbloques_2.6.3_amd64.deb\
+sudo chroot /debian apt-get install -f  # Para resolver dependencias
+: 1743654633:0;sudo cp /usr/bin/zsh /debian/usr/bin/\
+sudo cp -r /usr/lib/zsh /debian/usr/lib/\
+sudo chroot /debian apt update\
+sudo chroot /debian apt install -y zsh
+: 1743654674:0;sudo chroot /debian
+: 1743654909:0;apt install -y /home/waltjt/Descargas/pilasbloques_2.6.3_amd64.deb
+: 1743654915:0;sudo chroot /debian
+: 1743655124:0;sudo chroot /debian\
+apt update\
+apt install -y ./pilasbloques_2.6.3_amd64.deb
+: 1743655237:0;sudo mount --bind /proc /debian/proc\
+sudo mount --bind /sys /debian/sys\
+sudo mount --bind /dev /debian/dev
+: 1743655252:0;sudo cp /etc/resolv.conf /debian/etc/resolv.conf
+: 1743655262:0;sudo chroot /debian apt-get update
+: 1743655272:0;sudo chroot /debian apt-get install -y dpkg
+: 1743655286:0;sudo cp pilasbloques_2.6.3_amd64.deb /debian/tmp/
+: 1743655296:0;cd Descargas
+: 1743655298:0;sudo cp pilasbloques_2.6.3_amd64.deb /debian/tmp/
+: 1743655311:0;sudo chroot /debian dpkg -i /tmp/pilasbloques_2.6.3_amd64.deb
+: 1743655330:0;apt install -y /home/waltjt/Descargas/pilasbloques_2.6.3_amd64.deb
+: 1743655345:0;sudo chroot /debian
+: 1743655427:0;sudo chroot /debian dpkg -i /tmp/pilasbloques_2.6.3_amd64.deb
+: 1743655464:0;sudo mount --bind /proc /debian/proc\
+sudo mount --bind /sys /debian/sys\
+sudo mount --bind /dev /debian/dev\
+sudo mount --bind /dev/pts /debian/dev/pts
+: 1743655491:0;sudo chroot /debian /bin/bash -c "export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"\
+\
+
+: 1743655571:0;clearls
+: 1743655573:0;clearl
+: 1743655576:0;clear
+: 1743655579:0;cd ..
+: 1743655789:0;sudo pacman -S code
+: 1743655807:0;sudo su
+: 1743655850:0;mount | grep devpts
+: 1743655862:0;ls -l /dev/pts
+: 1743655903:0;sudo umount /dev/pts\
+sudo mount -t devpts -o gid=5,mode=620 devpts /dev/pts
+: 1743655915:0;umount /dev/pts\
+mount -t devpts -o gid=5,mode=620 devpts /dev/pts
+: 1743655945:0;whoami
+: 1743655955:0;sudo -i
+: 1743655966:0;su -
+: 1743656229:0;sudo su
+: 1743656246:0;sudo pacman -Rns docker
+: 1743656255:0;yay -Rns docker
+: 1743656291:0;sudo pacman -R docker
+: 1743656323:0;code
+: 1743656344:0;code &
+: 1743656369:0;sudo pacman -Rns code
+: 1743656385:0;sudo pacman -Rns cod
+: 1743656419:0;reboot
+: 1743656751:0;ls
+: 1743656774:0;sudo rm -rf debtap
+: 1743656788:0;ls
+: 1743656797:0;sudo rm -rf debian
+: 1743656819:0;ls
+: 1743656823:0;l
+: 1743656896:0;sudo pacman -S 7zip
+: 1743657168:0;wine uninstaller
+: 1743657469:0;ls -l ~/.wine/drive_c/
+: 1743657481:0;cd ~/.wine/drive_c/
+: 1743657495:0;sudo rm -rf pilas-bloques
+: 1743657497:0;ls
+: 1743657538:0;cd Program\ Files\ \(x86\)
+: 1743657539:0;ls
+: 1743657544:0;cd --
+: 1743657559:0;cd Program\ Files\ 
+: 1743657570:0;cd ~/.wine/drive_c/
+: 1743657576:0;cd Program\ Files\ 
+: 1743657578:0;ls
+: 1743657590:0;cd Program Files
+: 1743657647:0;cd Program\ Files/
+: 1743657649:0;ls
+: 1743657656:0;cd --
+: 1743657657:0;ls
+: 1743657659:0;l
+: 1743672423:0;cd .config/waybar
+: 1743672427:0;cd .config/
+: 1743672429:0;ls
+: 1743672467:0;mkdir waybar
+: 1743672470:0;l
+: 1743672476:0;cd waybar
+: 1743672511:0;nvim wifi_menu.sh
+: 1743672570:0;chmod +x ~/.config/waybar/scripts/wifi_menu.sh
+: 1743672583:0;chmod +x ~/.config/waybar/wifi_menu.sh
+: 1743672655:0;sudo pacman -S nmcli
+: 1743672734:0;sudo pacman -S wofi
+: 1743672822:0;nvim wifi_menu.sh
+: 1743672953:0;sudo nano /etc/sudoers
+: 1743673126:0;sudo cp ~/.config/waybar/wifi_menu.sh /usr/local/bin/show_wifi_password
+: 1743673139:0;sudo chown root:root /usr/local/bin/show_wifi_password\
+sudo chmod 4755 /usr/local/bin/show_wifi_password
+: 1743673214:0;sudo nano /etc/sudoers
+: 1743673827:0;sudo nvim wifi_connect.sh
+: 1743673856:0;nvim wifi_connect.sh
+: 1743673891:0;chmod +x ~/.config/waybar/wifi_connect.sh
+: 1743673921:0;sudo rm -rf wifi_connect.sh
+: 1743673926:0;nvim wifi_connect.sh
+: 1743673948:0;chmod +x ~/.config/waybar/wifi_connect.sh
+: 1743674041:0;rofi --version
+: 1743674204:0;sudo pacman -S yad 
+: 1743676141:0;yay -S whatsapp-nativefier\
+
+: 1743676169:0;whatsapp-nativefier\
+
+: 1743676190:0;whatsdesk
+: 1743676221:0;whatsapp-nativefier\
+
+: 1743676232:0;/usr/bin/whatsapp-nativefier\
+
+: 1743676236:0;/usr/bin/whatsapp\
+
+: 1743676244:0;cd /usr/bin/\
+
+: 1743676246:0;ls
+: 1743676287:0;whatis
+: 1743676298:0;wasitslos
+: 1743676338:0;cd whatis
+: 1743676354:0;whatsdesk\
+
+: 1743676418:0;pacman -Q | grep -i whatsapp\
+
+: 1743676430:0;which whatsapp-desktop\
+
+: 1743676449:0;find /usr/bin /usr/local/bin ~/.local/bin -name "whatsapp*"\
+
+: 1743676504:0;flatpak run io.github.mimbrero.WhatsAppDesktop\
+
+: 1743677320:0;hyprctl clients\
+
+: 1743677869:0;clear
+: 1743678261:0;sudo pacman -S xclip
+: 1743678342:0;clipboard.sh monitor &\
+
+: 1743678359:0;clipboard.sh show\
+
+: 1743678419:0;xclip -o -selection clipboard\
+
+: 1743678425:0;sudo pacman -S wl-clipboard\
+
+: 1743678440:0;wl-paste\
+
+: 1743678485:0;clipboard.sh monitor &\
+
+: 1743678507:0;cd .config/
+: 1743678508:0;ls
+: 1743678513:0;cd hypr
+: 1743678514:0;ls
+: 1743678519:0;cd scripts
+: 1743678520:0;ls
+: 1743678549:0;xclip\
+
+: 1743678569:0;chmod +x clipboard.sh\
+
+: 1743678599:0;clipboard.sh monitor &   # Para iniciar el monitoreo\
+clipboard.sh show        # Para mostrar el historial\
+
+: 1743678617:0;clipboard.sh monitor &\
+clipboard.sh show
+: 1743678673:0;xclip -o -selection clipboard\
+
+: 1743678718:0;sudo pacman -S wl-clipboard\
+
+: 1743678731:0;./clipboard.sh monitor &\
+
+: 1743678743:0;cat ~/.clipboard_history\
+
+: 1743679408:0;sudo -E nvim\
+
+: 1743679420:0;sudo nvim\
+
+: 1743679446:0;sudo visudo\
+
+: 1743679477:0;sudo nvim\
+
+: 1743680637:0;:Neotree toggle left\
+
+: 1743680666:0;nvim ~/.config/nvim/lua/plugins.lua
+: 1743680890:0;sudo pacman -S neotree
+: 1743680904:0;cd ..
+: 1743680908:0;cd nvim
+: 1743680910:0;ls
+: 1743680923:0;cd lua
+: 1743680926:0;l
+: 1743680960:0;nvim ~/.config/nvim/lua/plugins.lua
+: 1743681222:0;nvim
+: 1743682031:0;git clone https://github.com/nvim-neo-tree/neo-tree.nvim ~/.local/share/nvim/lazy/neo-tree.nvim\
+
+: 1743682074:0;cd ~/.local/share/nvim/lazy/
+: 1743682075:0;ls
+: 1743682109:0;rm -rf neo-tree.nvim
+: 1743682112:0;ls
+: 1743682120:0;git clone https://github.com/nvim-neo-tree/neo-tree.nvim ~/.local/share/nvim/lazy/neo-tree.nvim\
+
+: 1743682131:0;nvim
+: 1743683756:0;chmod +x /home/waltjt/pilasbloques-linux-x64/
+: 1743683783:0;chmod +x /home/waltjt/pilasbloques-linux-x64/pilasbloques
+: 1743683795:0;nano ~/.local/share/applications/mi_programa.desktop\
+
+: 1743683835:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743683885:0;find ~/.local/share/applications/ -name "*wine*"\
+
+: 1743683900:0;rm -f ~/.local/share/applications/wine-*\
+
+: 1743683905:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743683909:0;rm -rf ~/.cache/rofi/\
+
+: 1743683960:0;rm -f ~/.local/share/applications/wine-*\
+
+: 1743683967:0;ls ~/.config/rofi/\
+
+: 1743683985:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743683993:0;rofi -show drun\
+
+: 1743684042:0;find ~/.local/share/applications -type f -name "*wine*" -delete\
+
+: 1743684046:0;rm -rf ~/.config/menus/applications-merged/wine*\
+rm -rf ~/.local/share/desktop-directories/wine*\
+rm -rf ~/.cache/rofi*\
+
+: 1743684050:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743684054:0;rofi -show drun\
+
+: 1743684220:0;grep -rl "wine" ~/.local/share/applications/\
+
+: 1743684259:0;rm "/home/waltjt/.local/share/applications/wine/Programs/Pilas Bloques/desinstalar.desktop"\
+
+: 1743684280:0;rm "/home/waltjt/.local/share/applications/wine/Programs/Pilas Bloques/pilas-bloques.desktop\
+
+: 1743684300:0;rm /home/waltjt/.local/share/applications/wine/Programs/Pilas Bloques/pilas-bloques.desktop
+: 1743684304:0;ls
+: 1743684316:0;cd /home/waltjt/.local/share/applications/wine/Programs/Pilas Bloques/
+: 1743684325:0;cd /home/waltjt/.local/share/applications/wine/Programs/
+: 1743684327:0;ls
+: 1743684336:0;rm Pilas\ Bloques
+: 1743684343:0;rm -rf Pilas\ Bloques
+: 1743684346:0;ls
+: 1743684356:0;clear
+: 1743684365:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743684414:0;cd nano ~/.local/share/applications/\
+
+: 1743684421:0;cd ~/.local/share/applications/\
+
+: 1743684422:0;ls
+: 1743684449:0;nano ~/.local/share/applications/Pilas_Bloques.desktop\
+
+: 1743684510:0;chmod +x ~/.local/share/applications/Pilas_Bloques.desktop
+: 1743684521:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743684546:0;ls
+: 1743684562:0;rm -rf mi_programa.desktop
+: 1743684564:0;ls
+: 1743684573:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743684634:0;nano ~/.local/share/applications/Pilas_Bloques.desktop\
+
+: 1743684657:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743684714:0;mkdir -p ~/.config/rofi  \
+nano ~/.config/rofi/config.rasi\
+
+: 1743684775:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743684893:0;nano ~/.local/share/applications/Pilas_Bloques.desktop\
+
+: 1743685282:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743696853:0;sudo pacman -S sublimetext
+: 1743696857:0;sudo pacman -S sublime
+: 1743696861:0;sudo pacman -S sublime-text
+: 1743696914:0;sudo pacman -S sublime-text\
+
+: 1743696920:0;yay -S sublime-text\
+
+: 1743697029:0;sudo snap install notepad-plus-plus\
+
+: 1743697038:0;flatpak install flathub org.notepad_plus_plus.NotepadPlusPlus\
+
+: 1743697067:0;yay -S notepad
+: 1743697355:0;yay -S notepadqq\
+
+: 1743697491:0;yay -Rns notepadqq\
+
+: 1743698118:0;sudo pacman -Rns notepad\
+
+: 1743698133:0;clear
+: 1743698260:0;import urllib.request, os, sys; exec(urllib.request.urlopen('https://packagecontrol.io/Package%20Control.sublime-package').read().decode('utf-8'))\
+
+: 1743698265:0;clear
+: 1743698324:0;sudo pacman -S jdk-openjdk\
+
+: 1743698676:0;sqldeveloper\
+
+: 1743698684:0;yay -S sqldeveloper\
+
+: 1743700176:0;yay -S apache-netbeans\
+
+: 1743700190:0;flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo\
+
+: 1743700266:0;sudo snap install netbeans --classic
+: 1743700277:0;sudo pacman -S snap
+: 1743700311:0;yay -S snapd\
+
+: 1743700633:0;sudo systemctl enable --now snapd.socket\
+
+: 1743700642:0;sudo ln -s /var/lib/snapd/snap /snap\
+
+: 1743700657:0;sudo snap install netbeans --classic\
+
+: 1743700664:0;reboot
+: 1743700901:0;sudo snap install netbeans --classic\
+
+: 1743705612:0;netbeans
+: 1743705653:0;java -version\
+
+: 1743705675:0;yay -S jdk11-openjdk\
+
+: 1743705806:0;sudo pacman -S thunar-archive-plugin\
+
+: 1743706000:0;sudo pacman -S unzip p7zip unrar tar\
+
+: 1743706267:0;wine java -jar aplicacion.jar\
+
+: 1743728926:0;clear
+: 1743734613:0;nano ~/.local/share/applications/SQLDeveloper.desktop\
+
+: 1743734867:0;chmod +x ~/.local/share/applications/SQLDeveloper.desktop\
+
+: 1743734880:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743736824:0;code ~/.local/share/applications/SQLDeveloper.desktop\
+
+: 1743736929:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743737365:0;nvim ~/.local/share/applications/SQLDeveloper.desktop\
+
+: 1743737610:0;nvim
+: 1743737660:0;chmod +x ~/.local/share/applications/SQLDeveloper.desktop\
+
+: 1743737667:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743776587:0;nmcli device wifi list
+: 1743776627:0;nmcli device wifi connect "Ruth wifi 2.4"
+: 1743776645:0;nmcli device wifi connect Ruth wifi 2.4 password 16213516
+: 1743776661:0;nmcli device wifi connect Ruth wifi 2.4 password
+: 1743776700:0;nmcli device wifi connect "Ruth wifi 2.4" password
+: 1743776704:0;nmcli device wifi connect "Ruth wifi 2.4" pass
+: 1743776708:0;nmcli device wifi connect "Ruth wifi 2.4"
+: 1743776933:0;wifi menu
+: 1743776939:0;wifi-menu
+: 1743776946:0;sudo wifi-menu
+: 1743777003:0;nmcli device wifi connect "Ruth wifi 2.4" password "16213516"
+: 1743777097:0;nmcli device wifi connect "Ruth wifi 2.4" password "16213516" wpa2
+: 1743777138:0;nmcli device wifi connect "Ruth wifi 2.4" password "16213516" wifi-sec.key-mgmt wpa-psk
+: 1743777151:0;nmcli device wifi connect "Ruth wifi 2.4" password "16213516" wpa-psk
+: 1743777174:0;nmcli device wifi connect "Ruth wifi 2.4" password "16213516" wpa2-psk
+: 1743777180:0;nmcli device wifi connect "Ruth wifi 2.4" password "16213516 wpa2"
+: 1743777209:0;nmcli device wifi connect "Ruth wifi 2.4" password "16213516" wifi-sec.key-mgmt "wpa-psk"
+: 1743777269:0;nmcli --ask device wifi connect "Ruth wifi 2.4" 
+: 1743793843:0;nmcli --ask device wifi connect "MOVISTAR-RYW"
+: 1743795889:0;nmcli
+: 1743796185:0;disconnect_wifi
+: 1743796360:0;nmcli radio wifi on
+: 1743823039:0;sudo pacman -S obs
+: 1743823047:0;yay -S obs
+: 1743823083:0;sudo pacman -S obs-studio\
+
+: 1743823140:0;sudo pacman -S xdg-desktop-portal xdg-desktop-portal-wlr\
+
+: 1743823149:0;sudo pacman -S pipewire pipewire-pulse wireplumber\
+
+: 1743823157:0;systemctl --user enable --now pipewire pipewire-pulse wireplumber\
+systemctl --user restart xdg-desktop-portal\
+
+: 1743823265:0;sudo pacman -S audacity
+: 1743823295:0;sudo pacman -S vls
+: 1743823297:0;sudo pacman -S vlc
+: 1743823310:0;sudo pacman -S kdenlive
+: 1743823438:0;sudo pacman -S keepassxc
+: 1743823461:0;sudo pacman -S tldr
+: 1743823468:0;tldr
+: 1743823653:0;rofi -dmenu -sort false -matching normal\
+
+: 1743823679:0;nvim ~/.config/rofi/config.rasi
+: 1743823749:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743823772:0;nvim ~/.config/rofi/config.rasi
+: 1743823795:0;update-desktop-database ~/.local/share/applications/\
+
+: 1743823804:0;sort <<< "$LISTA"\
+
+: 1743823814:0;nvim ~/.config/rofi/config.rasi
+: 1743823849:0;sort <<< "$LISTA"\
+
+: 1743823877:0;wofi --dmenu --no-hist\
+
+: 1743824052:0;pkill rofi\
+rofi -show drun\
+
+: 1743824095:0;rm ~/.local/share/rofi/history\
+
+: 1743824120:0;rofi -modi drun -show drun -sorting-method normal\
+
+: 1743824144:0;ls /usr/share/applications/ | sort\
+ls ~/.local/share/applications/ | sort\
+
+: 1743824162:0;rofi -modi drun -show drun | sort\
+
+: 1743864968:0;sudo pacman -S libre office
+: 1743864972:0;sudo pacman -S libre-office
+: 1743865034:0;sudo pacman -S libreoffice-still-es\
+
+: 1743865176:0;sudo pacman -S hunspell-es\
+
+: 1743865217:0;sudo pacman -S hunspell-es_any\
+
+: 1743874959:0;sudo pacman -S alsa-utils pulseaudio pulseaudio-alsa
+: 1743893600:0;lsmod | grep snd
+: 1743893614:0;sudo modprobe snd_hda_intel
+: 1743893688:0;aplay -l
+: 1743893696:0;alsamixer
+: 1743893721:0;pulseaudio --start
+: 1743893726:0;pactl list sinks
+: 1743893733:0;sudo pacman -S pulseaudio pavucontrol
+: 1743893749:0;sudo alsactl restore
+: 1743893754:0;systemctl --user restart pipewire
+: 1743893861:0;pactl set-sink-mute @DEFAULT_SINK@ 0
+: 1743893867:0;pactl set-sink-volume @DEFAULT_SINK@ 100%
+: 1743893877:0;pactl set-default-sink alsa_output.pci-0000_00_1b.0.analog-stereo
+: 1743894008:0;reboot
+: 1743894495:0;systemctl --user status pipewire\
+
+: 1743894511:0;systemctl --user enable --now wireplumber\
+
+: 1743894517:0;wpctl status\
+
+: 1743894539:0;speaker-test -t wav\
+
+: 1743894581:0;sudo pacman -S pavucontrol\
+
+: 1743894687:0;aplay /usr/share/sounds/alsa/Front_Center.wav\
+
+: 1743894715:0;systemctl --user restart pipewire wireplumber\
+
+: 1743894721:0;aplay -l\
+
+: 1743894735:0;inxi -A\
+
+: 1743894762:0;sudo pacman -Rns pulseaudio\
+
+: 1743894834:0;systemctl --user mask pulseaudio.service pulseaudio.socket\
+
+: 1743894839:0;systemctl --user enable --now pipewire pipewire-pulse wireplumber\
+
+: 1743894865:0;sudo pacman -S pipewire pipewire-pulse wireplumber\
+
+: 1743894919:0;systemctl --user enable --now pipewire pipewire-pulse wireplumber\
+
+: 1743894926:0;systemctl --user mask pulseaudio pulseaudio.socket\
+
+: 1743894930:0;systemctl --user status pipewire pipewire-pulse wireplumber\
+
+: 1743908342:0;chmod +x ./DaVinci_Resolve_20.0_Linux.run\
+sudo ./DaVinci_Resolve_20.0_Linux.run -i
+: 1743908351:0;ls
+: 1743908357:0;cd Descargas
+: 1743908358:0;ls
+: 1743908365:0;cd DaVinci_Resolve_20.0b1_Linux
+: 1743908367:0;ls
+: 1743908389:0;chmod +x ./DaVinci_Resolve_20.0_Linux.run
+: 1743908406:0;chmod +x ./DaVinci_Resolve_20.0b1_Linux.run
+: 1743908427:0;sudo ./DaVinci_Resolve_20.0b1_Linux.run -i
+: 1743908488:0;yay -S davinci-resolve\
+
+: 1743911493:0;sudo yay -S davinci-resolve\n[200~chmod +x DaVinci_Resolve_Installer.run
+: 1743911494:0;sudo ./DaVinci_Resolve_Installer.run
+: 1743985280:0;chmod +x DaVinci_Resolve_Installer.run\
+sudo ./DaVinci_Resolve_Installer.run\
+
+: 1743985284:0;l
+: 1743985290:0;cd Descargas
+: 1743985291:0;ls
+: 1743985301:0;cd DaVinci_Resolve_20.0b1_Linux
+: 1743985303:0;ls
+: 1743985314:0;run DaVinci_Resolve_20.0b1_Linux.run
+: 1743985332:0;DaVinci_Resolve_20.0b1_Linux.run
+: 1743985343:0;sudo ./DaVinci_Resolve_20.0b1_Linux.run
+: 1743985350:0;sudo ./DaVinci_Resolve_20.0b1_Linux.run -i
+: 1743985388:0;chmod +x DaVinci_Resolve_20.0b1_Linux.run\
+
+: 1743985402:0;./DaVinci_Resolve_20.0b1_Linux.run\
+
+: 1743985964:0;cd ~/.local/share/applications/
+: 1743985965:0;ls
+: 1743985990:0;ls /usr/share/applications/
+: 1743986047:0;l
+: 1743986062:0;code mimeinfo.cache
+: 1743986092:0;code Pilas_Bloques.desktop
+: 1743986151:0;cd ~/.local/share/applications/wine/\
+
+: 1743986152:0;ls
+: 1743986160:0;cd Programs
+: 1743986161:0;ls
+: 1743986177:0;sudo rm -rf Pilas\ Bloques
+: 1743986178:0;ls
+: 1743986196:0;cd ~/.local/share/applications/\
+
+: 1743986197:0;ls
+: 1743986202:0;cd wine
+: 1743986203:0;ls
+: 1743986206:0;cd Programs
+: 1743986208:0;ls
+: 1743986212:0;cd --
+: 1743986214:0;ls
+: 1743986259:0;rofi -show drun -sort\
+
+: 1743986295:0;nano ~/.local/bin/wofi-apps.sh\
+
+: 1743986309:0;chmod +x ~/.local/bin/wofi-apps.sh\
+
+: 1743986322:0;compgen -c | sort | wofi --dmenu | xargs -r swaymsg exec --\
+
+: 1743986390:0;rofi -show drun
+: 1743986428:0;rofi -show drun -sort\
+
+: 1743986584:0;mkdir -p ~/.config/rofi\
+nano ~/.config/rofi/config.rasi\
+
+: 1743986949:0;rofi -show drun\
+
+: 1743986990:0;nano ~/.local/bin/rofi_apps.sh\
+
+: 1743987003:0;chmod +x ~/.local/bin/rofi_apps.sh\
+
+: 1743987008:0;rofi_apps.sh\
+
+: 1743987019:0;cd ~/.local/bin/rofi_apps.sh\
+
+: 1743987026:0;cd ~/.local/bin/\
+
+: 1743987029:0;rofi_apps.sh\
+
+: 1743987166:0;rm -rf rofi_apps.sh
+: 1743987189:0;nano ~/.local/bin/rofi_apps.sh\
+
+: 1743987253:0;chmod +x ~/.local/bin/rofi_apps.sh\
+
+: 1743987262:0;~/.local/bin/rofi_apps.sh\
+
+: 1743987333:0;cd ~/.local/bin/\
+
+: 1743987335:0;ls
+: 1743987357:0;nvim rofi_apps.sh\
+
+: 1743987388:0;rm -rf rofi_apps.sh\
+
+: 1743987405:0;nano ~/.local/bin/rofi_drun_filtrado.sh\
+
+: 1743987414:0;chmod +x ~/.local/bin/rofi_drun_filtrado.sh\
+
+: 1743987418:0;~/.local/bin/rofi_drun_filtrado.sh\
+
+: 1743987510:0;nano ~/.local/bin/rofi_drun_ordenado.sh
+: 1743987524:0;chmod +x ~/.local/bin/rofi_drun_ordenado.sh\
+
+: 1743987529:0;~/.local/bin/rofi_drun_ordenado.sh\
+
+: 1743987554:0;find /usr/share/applications ~/.local/share/applications -type f -name "*.desktop" ! -path "*wine*" | head -n 5\
+
+: 1743987582:0;for file in /usr/share/applications/*.desktop; do\
+    grep -m 1 '^Name=' "$file"\
+done | head -n 10\
+
+: 1743987602:0;NAME=$(grep -m 1 '^Name=' "$file" | cut -d'=' -f2-)\
+
+: 1743987607:0;NAME=$(grep -m 1 -E '^Name(\[.*\])?=' "$file" | head -n1 | cut -d'=' -f2-)\
+
+: 1743987631:0;ls\
+
+: 1743987654:0;rm -rf rofi_drun_filtrado.sh rofi_drun_ordenado.sh\
+
+: 1743987655:0;ls
+: 1743987670:0;nano ~/rofi_ordenado.sh
+: 1743987681:0;chmod +x ~/rofi_ordenado.sh\
+
+: 1743987686:0;~/rofi_ordenado.sh\
+
+: 1743987712:0;nano ~/rofi-launcher.sh\
+
+: 1743987723:0;chmod +x ~/rofi-launcher.sh\
+
+: 1743987726:0;~/rofi-launcher.sh\
+
+: 1743987835:0;ls
+: 1743987888:0;rofi-launcher.sh
+: 1743987892:0;chmod +x ~/rofi-launcher.sh\
+
+: 1743987894:0;rofi-launcher.sh
+: 1743987905:0;./rofi-launcher.sh
+: 1743987936:0;rm -rf rofi-launcher.sh
+: 1743987945:0;./rofi_ordenado.sh
+: 1743987959:0;rm -rf rofi_ordenado.sh
+: 1743987961:0;ls
+: 1743987981:0;cd ~/.local/bin/\
+
+: 1743987982:0;ls
+: 1743987995:0;nano rofi-launcher.sh\
+
+: 1743988011:0;chmod +x rofi-launcher.sh\
+
+: 1743988017:0;rofi-launcher.sh
+: 1743988041:0;./.local/bin/rofi-launcher.sh
+: 1743988056:0;/home/waltjt/.local/bin/rofi-launcher.sh
+: 1743988070:0;rm -rf rofi-launcher.sh
+: 1743988071:0;ls
+: 1743988298:0;rm -rf ~/.cache/rofi
+: 1743988310:0;sudo pacman -S rofi --overwrite '*'
+: 1743988403:0;rofi -show drun
+: 1743988563:0;rofi -show drun -sorting-method fzf
+: 1743988582:0;sudo update-desktop-database
+: 1743988587:0;rofi -dump-config > ~/.config/rofi/config.rasi
+: 1743988615:0;ls -l /usr/share/applications/ ~/.local/share/applications/
+: 1743988667:0;wofi --show drun
+: 1743988685:0;rofi -show drun -x11
+: 1743988719:0;rofi -show drun -debug 2> rofi_error.log
+: 1743989023:0;/usr/share/applications/
+: 1743989025:0;ls
+: 1743989045:0;ls -l /usr/share/applications/ ~/.local/share/applications/ | grep -i "firefox.desktop"  # Ejemplo con Firefox
+: 1743989128:0;rofi -show drun -drun-show-actions false
+: 1743989151:0;rofi -show drun -drun-use-desktop-cache -disable-history
+: 1743989240:0;grep -l "NoDisplay=true" /usr/share/applications/* ~/.local/share/applications/*
+: 1743989250:0;rofi -show drun -x11  # Fuerza modo XWayland
+: 1743989259:0;wofi --show drun --allow-images --insensitive
+: 1743989322:0;rm ~/.local/share/applications/firefox.desktop  # Ejemplo
+: 1743989338:0;cd ~/.local/share/applications/ # Ejemplo
+: 1743989339:0;ls
+: 1743989367:0;~/.local/share/applications/
+: 1743989369:0;ls
+: 1743989387:0;sudo update-desktop-database\
+update-desktop-database ~/.local/share/applications/
+: 1743989400:0;rofi -show drun -drun-show-actions false
+: 1743989413:0;rofi -show drun -drun-use-desktop-cache -disable-history
+: 1743989428:0;grep -l "NoDisplay=true" /usr/share/applications/* ~/.local/share/applications/*
+: 1743989490:0;rofi -show drun \\
+    -drun-show-actions false \\
+    -drun-use-desktop-cache \\
+    -disable-history
+: 1743989503:0;# Ejemplo: Ocultar un archivo .desktop\
+echo "NoDisplay=true" | sudo tee -a /usr/share/applications/nombre_app.desktop
+: 1743989515:0;flatpak uninstall --unused  # Para Flatpak\
+snap list | grep disabled | awk '{print $1}' | xargs -r sudo snap remove  # Para Snap
+: 1743990355:0;wofi --show drun --allow-images --insensitive
+: 1743990450:0;rofi -show drun
+: 1743991848:0;rofi -show drun -drun-show-actions false
+: 1743991873:0;rm -rf ~/.config/rofi ~/.cache/rofi
+: 1743991893:0;sudo pacman -Rns rofi  # Elimina Rofi y configuraciones\
+sudo pacman -S rofi    # Reinstala
+: 1743991921:0;sudo pacman -Rns rofi    # Reinstala
+: 1743991974:0;sudo pacman -S rofi    # Reinstala
+: 1743991988:0;rm -rf ~/.config/rofi ~/.cache/rofi
+: 1743992153:0;nano ~/.config/hypr/scripts/rofi_launcher.sh
+: 1743992165:0;chmod +x ~/.config/hypr/scripts/rofi_launcher.sh
+: 1743992590:0;rm -rf ~/.cache/rofi ~/.local/share/applications/rofi-* ~/.local/share/applications/mimeinfo.cache\
+sudo rm -f /usr/share/applications/mimeinfo.cache\
+sudo update-desktop-database\
+update-desktop-database ~/.local/share/applications/
+: 1743992612:0;nvim ~/.local/bin/rofi_unique
+: 1743992651:0;chmod +x ~/.local/bin/rofi_unique
+: 1743992802:0;sudo sed -i '/^Hidden=true/d;/^NoDisplay=true/d' /usr/share/applications/*.desktop\
+sed -i '/^Hidden=true/d;/^NoDisplay=true/d' ~/.local/share/applications/*.desktop
+: 1743992943:0;rm -rf ~/.cache/rofi ~/.local/share/applications/rofi-*
+: 1743992956:0;grep -l "Name=Firefox" /usr/share/applications/* ~/.local/share/applications/*  # Ejemplo con Firefox
+: 1743992968:0;sudo update-desktop-database && update-desktop-database ~/.local/share/applications/
+: 1743993066:0;rm -rf ~/.cache/rofi ~/.local/share/applications/rofi-*
+: 1743993291:0;clear
+: 1743993616:0;grep -l "Name=code" /usr/share/applications/* ~/.local/share/applications/*
+: 1743993626:0;grep -l "Name=Code" /usr/share/applications/* ~/.local/share/applications/*
+: 1743993693:0;sudo rm /usr/share/applications/code-oss-url-handler.desktop
+: 1743993697:0;sudo rm /usr/share/applications/code-url-handler.desktop
+: 1743993710:0;sudo update-desktop-database\
+update-desktop-database ~/.local/share/applications/
+: 1743993729:0;grep -l "Name=Cortafuegos" /usr/share/applications/* ~/.local/share/applications/*
+: 1743993735:0;grep -l "Name=Cortafuego" /usr/share/applications/* ~/.local/share/applications/*
+: 1743993743:0;grep -l "Name=cortafuego" /usr/share/applications/* ~/.local/share/applications/*
+: 1743993767:0;grep -l "Name=Cortafuegos" /usr/share/applications/* ~/.local/share/applications/*
+: 1743993775:0;grep -l "Name=firewall" /usr/share/applications/* ~/.local/share/applications/*
+: 1743993823:0;grep -l "Name=kcontrol" /usr/share/applications/* ~/.local/share/applications/*
+: 1743993838:0;grep -l "Name=KDE*" /usr/share/applications/* ~/.local/share/applications/*
+: 1743993929:0;grep -l "Cortafuegos" /usr/share/applications/* ~/.local/share/applications/* 
+: 1743993947:0;rm -rf /usr/share/applications/kcm_firewall.desktop
+: 1743993953:0;sudo rm -rf /usr/share/applications/kcm_firewall.desktop
+: 1743993983:0;sudo pacman -Rns flameshot
+: 1743994149:0;grep -l "Atajos*" /usr/share/applications/* ~/.local/share/applications/* 
+: 1743994168:0;sudo rm -rf /usr/share/applications/kcm_keys.desktop
+: 1743994198:0;grep -l "Cola*" /usr/share/applications/* ~/.local/share/applications/* 
+: 1744207180:0;xdg-mime default kitty.desktop x-scheme-handler/terminal\
+
+: 1744207238:0;which kitty\
+
+: 1744207261:0;xfconf-query -c thunar -p /misc-terminal-emulator -s kitty\
+
+: 1744207270:0;pkill thunar\
+thunar &\
+
+: 1744207334:0;xfconf-query -c thunar -p /misc-terminal-emulator\
+
+: 1744207353:0;sudo pacman -S thunar-archive-plugin thunar-volman\
+
+: 1744207394:0;pkill thunar\
+thunar &\
+
+: 1744207470:0;xfconf-query -c thunar -n -p /misc-terminal-emulator -t string -s kitty\
+
+: 1744207476:0;xfconf-query -c thunar -p /misc-terminal-emulator\
+
+: 1744207481:0;pkill thunar\
+thunar &\
+
+: 1744207516:0;grep Categories /usr/share/applications/kitty.desktop\
+
+: 1744207525:0;sudo nano /usr/share/applications/kitty.desktop\
+
+: 1744207959:0;cd /etc/xdg/thunar
+: 1744207962:0;cd /etc/xdg/
+: 1744207964:0;ls
+: 1744207967:0;cd Thunar
+: 1744207968:0;ls
+: 1744207979:0;sudo nvim uca.xml
+: 1744208134:0;pkill thunar\
+thunar &\
+
+: 1744208272:0;which kitty\
+
+: 1744208323:0;kitty --directory %f\
+
+: 1744208359:0;la
+: 1744208415:0;ranger
+: 1744208471:0;sudo pacman -S yazi ueberzugpp ffmpegthumbnailer jq\
+
+: 1744208489:0;nano ~/.config/yazi/yazi.toml\
+
+: 1744208530:0;cd ~/.config/yazi/\
+
+: 1744208539:0;cd ~/.config
+: 1744208540:0;ls
+: 1744208556:0;mkdir -p ~/.config/yazi
+: 1744208558:0;ls
+: 1744208568:0;nano ~/.config/yazi/yazi.toml\
+
+: 1744208611:0;chmod +x ~/.config/yazi/yazi.toml\
+
+: 1744208835:0;sudo pacman -S curlftpfs\
+
+: 1744208906:0;mkdir -p ~/mnt/Android_WJT\
+curlftpfs ftp://pc:260689@192.168.1.74:2606 ~/mnt/Android_WJT\
+
+: 1744209010:0;yazi ~/mnt/Android_WJT\
+
+: 1744209092:0;sudo pacman -S rclone\
+
+: 1744209151:0;rclone config\
+
+: 1744209286:0;ls
+: 1744209311:0;mkdir -p ~/mnt/Android_WJT\
+rclone mount ftpcel: ~/mnt/Android_WJT &\
+
+: 1744209320:0;rclone config\
+
+: 1744209338:0;sudo pacman -Rns rclone\
+
+: 1744209363:0;kitty +kitten icat
+: 1744209575:0;ls -l ~/mnt/ftpcel/Android_WJT\
+
+: 1744209582:0;ls -l ~/mnt/Android_WJT\
+
+: 1744209658:0;chmod +x ~/m/A/device\
+
+: 1744209668:0;chmod 777 ~/m/A/device\
+
+: 1744209706:0;sudo chmod 777 ~/m/A/device\
+
+: 1744209714:0;ls
+: 1744209732:0;sudo chmod 777 ~/m/A/\
+
+: 1744209788:0;cd mnt
+: 1744209810:0;mkdir -p Android_WJT\
+
+: 1744209811:0;ls
+: 1744209853:0;mkdir Android_WJT\
+
+: 1744209861:0;sud mkdir Android_WJT\
+
+: 1744209864:0;sudo mkdir Android_WJT\
+
+: 1744209981:0;fusermount -u ~/mnt/Android_WJT\
+
+: 1744210020:0;fusermount -u ~/mnt/Android_WJT
+: 1744221452:0;waybar &
+: 1744221739:0;ls
+: 1744221767:0;cd /home/waltjt/.config
+: 1744221768:0;ls
+: 1744221779:0;cd waybar
+: 1744221780:0;ls
+: 1744221800:0;nano launch_app.sh
+: 1744221812:0;chmod +x ~/scripts/launch_app.sh\
+
+: 1744221819:0;chmod +x launch_app.sh\
+
+: 1744222042:0;rm -rf launch_app.sh\
+
+: 1744222043:0;ls
+: 1744222045:0;l
+: 1744222628:0;killal waybar && waybar &
+: 1744222636:0;killall waybar && waybar &
+: 1744223115:0;ping
+: 1744223119:0;ip
+: 1744223129:0;host
+: 1744223135:0;ipconfig
+: 1744223158:0;host -T
+: 1744223165:0;host -T -4
+: 1744223179:0;ip
+: 1744224020:0;ip a\
+
+: 1744224059:0;killall waybar && waybar &
+: 1744224119:0;hostname -I\
+
+: 1744224125:0;hostname -i\
+
+: 1744224197:0;killall waybar && waybar &
+: 1744224650:0;waybar &
+: 1744224711:0;killall waybar && waybar &
+: 1744224874:0;mkdir -p ~/.config/waybar/scripts\
+
+: 1744224884:0;ls
+: 1744224895:0;rm -rf scripts
+: 1744224897:0;ls
+: 1744224913:0;nano wifi-ip.sh
+: 1744224949:0;killall waybar && waybar &
+: 1744224969:0;chmod +x ~/.config/waybar/wifi-ip.sh\
+
+: 1744224976:0;killall waybar && waybar &
+: 1744228402:0;ls
+: 1744228408:0;nano wifi-ip.sh
+: 1744228482:0;killall waybar && waybar &
+: 1744228616:0;nano wifi-ip.sh
+: 1744228639:0;code wifi-ip.sh
+: 1744228660:0;killall waybar && waybar &
+: 1744228741:0;ls
+: 1744228754:0;rm -rf wifi-ip.sh
+: 1744228757:0;clear
+: 1744228820:0;iw dev\
+
+: 1744228859:0;sudo pacman -S iw\
+
+: 1744228868:0;iw dev\
+
+: 1744228921:0;code ~/.config/waybar/wifi-ip.sh
+: 1744228935:0;chmod +x ~/.config/waybar/wifi-ip.sh\
+
+: 1744228991:0;pkill waybar && waybar &\
+
+: 1744229021:0;ls -l ~/.config/waybar/wifi-ip.sh\
+
+: 1744229054:0;killall waybar
+: 1744229058:0;~/.config/waybar/wifi-ip.sh\
+
+: 1744229122:0;"custom/wifi-ip": {\
+  "format": "ðƒ¿ƒ³¶ {output}",\
+  "exec": "~/.config/waybar/wifi-ip.sh",\
+  "interval": 10,\
+  "return-type": "text",\
+  "tooltip": true,\
+  "tooltip-format": "IP WiFi: {output}"\
+}\
+
+: 1744229193:0;waybar &\
+
+: 1744229243:0;killall waybar
+: 1744229245:0;waybar &\
+
+: 1744229248:0;clear
+: 1744229310:0;~/.config/waybar/wifi-ip.sh\
+
+: 1744229368:0;killall waybar
+: 1744229371:0;waybar &\
+
+: 1744229474:0;killall waybar && waybar &\
+
+: 1744229488:0;"exec": "/bin/bash ~/.config/waybar/wifi-ip.sh"\
+
+: 1744229503:0;~/.config/waybar/wifi-ip.sh\
+
+: 1744229589:0;killall waybar && waybar &\
+
+: 1744230141:0;sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1\
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1\
+
+: 1744230166:0;killall waybar && waybar &\
+
+: 1744230231:0;nvim /etc/sysctl.d/disable-ipv6.conf
+: 1744230265:0;sudo nvim /etc/sysctl.d/disable-ipv6.conf
+: 1744230284:0;sudo sysctl --system\
+
+: 1744230304:0;sudo nano /etc/gai.conf\
+
+: 1744230439:0;killall waybar && waybar &\
+
+: 1744230632:0;waybar &\
+
+: 1744230805:0;killall waybar && waybar &\
+
+: 1744230820:0;waybar &\
+
+: 1744230970:0;killall waybar && waybar &\
+
+: 1744231313:0;waybar -l debug\
+
+: 1744231323:0;[info] Compiled with Hyprland support: true\
+
+: 1744231350:0;echo $HYPRLAND_INSTANCE_SIGNATURE\
+
+: 1744231428:0;nano ~/.config/waybar/window-title.sh\
+
+: 1744231443:0;chmod +x ~/.config/waybar/window-title.sh\
+
+: 1744231454:0;killall waybar && waybar &\
+
+: 1744231519:0;waybar -s ~/.config/waybar/style.css\
+
+: 1744231522:0;ls
+: 1744231527:0;cd ..
+: 1744231563:0;killall waybar && waybar &\
+
+: 1744232030:0;waybar &\
+
+: 1744232053:0;killall waybar && waybar &\
+
+: 1744254057:0;brightnessctl get\
+
+: 1744254126:0;[200~brightnessctl info
+: 1744254130:0;brightnessctl info\
+
+: 1744254183:0;ls /sys/class/backlight/\
+
+: 1744254289:0;sudo light -A 1 
+: 1744254319:0;sudo find /sys -type d -name "*backlight*"\
+
+: 1744254347:0;sudo pacman -S light\
+
+: 1744254377:0;yay -S light\
+
+: 1744254471:0;brightnessctl -d intel_backlight set 1%+\
+
+: 1744254491:0;light
+: 1744254523:0;light -U 1
+: 1744254526:0;light
+: 1744254529:0;light -U 1
+: 1744254535:0;light -1
+: 1744254542:0;light 1-
+: 1744254549:0;light %1-
+: 1744254572:0;acpi_backlight=vendor\
+
+: 1744254586:0;cd /etc/default/grub
+: 1744254590:0;cd /etc/default/
+: 1744254591:0;ls
+: 1744254597:0;sudo nano grub
+: 1744254707:0;sudo grub-mkconfig -o /boot/grub/grub.cfg\
+
+: 1744254870:0;sudo pacman -S xorg-xrandr\
+
+: 1744254878:0;xrandr --output eDP-1 --brightness 0.8\
+
+: 1744254898:0;xrandr | grep " connected"\
+
+: 1744254909:0;xrandr --output LVDS-1 --brightness 0.8\
+
+: 1744254922:0;xrandr --output LVDS-1 --brightness 1\
+
+: 1744254941:0;xrandr --output LVDS-1 --brightness 8\
+
+: 1744254944:0;xrandr --output LVDS-1 --brightness 1\
+
+: 1744254965:0;sudo light -S 50\
+
+: 1744254974:0;sudo light -S 1\
+
+: 1744254982:0;sudo light -S 2\
+
+: 1744255003:0;sudo light -A 5\
+
+: 1744255007:0;sudo light -A 50\
+
+: 1744255018:0;sudo light -S 5\
+
+: 1744255029:0;sudo light -a 0.5\
+
+: 1744255034:0;sudo light -A 0.5\
+
+: 1744255045:0;sudo light -A 5\
+
+: 1744255048:0;sudo light -A 20\
+
+: 1744255061:0;sudo light -A 10\
+
+: 1744255067:0;sudo light -A 15\
+
+: 1744255148:0;light -U 5  # Baja 5%
+: 1744255154:0;light -U 5
+: 1744255158:0;sudo light -U 5
+: 1744255164:0;sudo light -U 05
+: 1744255169:0;sudo light -U 10
+: 1744255173:0;sudo light -U 15
+: 1744255230:0;sudo chmod +s /usr/bin/light
+: 1744255250:0;light -U 15
+: 1744255254:0;light -A 15
+: 1744255314:0;killall waybar && waybar &\
+
+: 1744255447:0;ls /usr/share/applications/kitty.desktop\
+
+: 1744255460:0;cd /usr/share/applications/\
+
+: 1744255461:0;ls
+: 1744255472:0;code kitty.desktop
+: 1744255498:0;xdg-mime default kitty.desktop x-terminal-emulator\
+
+: 1744255523:0;nano ~/.zshrc
+: 1744255548:0;alias x-terminal-emulator='kitty'\
+alias xterm='kitty'\
+
+: 1744255561:0;source ~/.zshrc
+: 1744255598:0;nano ~/.zshrc
+: 1744255620:0;source ~/.zshrc
+: 1744255677:0;sudo pacman -S exo\
+
+: 1744255684:0;exo-preferred-applications\
+
+: 1744255705:0;exo
+: 1744255720:0;kitty --working-directory=%s\
+
+: 1744255743:0;xfconf-query -c thunar -p /misc-terminal-emulator -s kitty\
+
+: 1744255785:0;sudo pacman -S exo\
+
+: 1744255798:0;exo-preferred-applications\
+
+: 1744255845:0;yay -S exo\
+
+: 1744255853:0;exo-preferred-applications\
+
+: 1744256200:0;killall waybar && waybar &\
+
+: 1744256232:0;sudo pacman -S alacrity\
+
+: 1744256237:0;sudo pacman -S alacritty\
+
+: 1744256365:0;killall waybar && waybar &\
+
+: 1744256740:0;yazi
+: 1744257545:0;killall waybar && waybar &\
+
+: 1744257549:0;waybar &\
+
+: 1744257632:0;killall waybar && waybar &\
+
+: 1744257919:0;mako
+: 1744257924:0;mako &
+: 1744257983:0;killall waybar && waybar &\
+
+: 1744258711:0;waybar &\
+
+: 1744258758:0;chmod +x ~/.config/hypr/scripts/system-menu.sh\
+
+: 1744325107:0;sudo pacman --needed --noconfirm -S git python-pip libffi
+: 1744325136:0;python3 -m pip install --user qmk
+: 1744325160:0;sudo pacman -S qmk
+: 1744330343:0;qmk
+: 1744330371:0;qmk setup
+: 1744331316:0;qmk
+: 1744331328:0;qmk sys
+: 1744331377:0;qmk compile -kb <keyboard> -km default
+: 1744331394:0;qmk compile -kb <crkbd> -km default
+: 1744331412:0;qmk compile -kb clueboard/66/rev3 -km default
+: 1744331749:0;mkdir -p /mnt/Android_WJT\
+rclone mount ftpcel: /mnt/Android_WJT &\
+
+: 1744331759:0;sudo mkdir -p /mnt/Android_WJT\
+rclone mount ftpcel: /mnt/Android_WJT &\
+
+: 1744331851:0;mkdir -p /home/waltjt/Android_WJT\
+rclone mount ftpcel: /home/waltjt/Android_WJT &\
+
+: 1744331912:0;sudo pacman -S rclone\
+
+: 1744331952:0;sudo mkdir -p /mnt/Android_WJT\
+rclone mount ftpcel: /mnt/Android_WJT &\
+
+: 1744332014:0;sudo rclone mount ftpcel: /mnt/Android_WJT &\
+
+: 1744332025:0;ftpcel
+: 1744332099:0;mkdir -p /mnt/Android_WJT\
+curlftpfs ftp://pc:260689@192.168.1.74:2606 /mnt/Android_WJT\
+
+: 1744332116:0;sudo curlftpfs ftp://pc:260689@192.168.1.74:2606 /mnt/Android_WJT\
+
+: 1744332241:0;curlftftfs ftp://pc:260689@192.168.1.74:2606 /home/waltjt/Android_WJT
+: 1744332266:0;curlftpfs ftp://pc:260689@192.168.1.74:2606 /home/waltjt/Android_WJT
+: 1744332304:0;la
+: 1744332308:0;cd mnt
+: 1744332315:0;cd /mnt
+: 1744332316:0;ls
+: 1744332326:0;rm -rf Android_WJT
+: 1744332332:0;sudo rm -rf Android_WJT
+: 1744332351:0;curlftpfs
+: 1744332358:0;rmount
+: 1744332367:0;rclone
+: 1744332391:0;rclone config\
+
+: 1744332412:0;sudo pacman -Rns rclone\
+
+: 1744332436:0;ls
+: 1744332461:0;cd /Android_WJT
+: 1744332630:0;ls -ld /mnt/Android_WJT
+: 1744332659:0;sudo rmdir /mnt/Android_WJT
+: 1744332675:0;sudo ls -ld /mnt/Android_WJT
+: 1744332687:0;sudo rm -rf /mnt/Android_WJT
+: 1744332744:0;sudo umount /mnt/Android_WJT
+: 1744332778:0;mount | grep Android_WJT
+: 1744332796:0;cd ..
+: 1744332798:0;sudo rmdir /mnt/Android_WJT
+: 1744412619:0;cd /usr/share/applications/
+: 1744412620:0;ls
+: 1744412652:0;cd ~/.local/share/applications/
+: 1744412653:0;ls
+: 1744412662:0;code Pilas_Bloques.desktop
+: 1744412767:0;update-desktop-database ~/.local/share/applications
+: 1744458459:0;~/.config/hypr/scripts/clipboard.sh monitor &\
+
+: 1744458624:0;sudo pacman -S wl-clipboard\
+
+: 1744458658:0;~/.config/hypr/scripts/clipboard.sh monitor &\
+
+: 1744458692:0;echo "Probando Hyprland" | wl-copy\
+wl-paste\
+
+: 1744458747:0;~/.config/hypr/scripts/clipboard.sh monitor
+: 1744458796:0;touch ~/.clipboard_history\
+
+: 1744458801:0;chmod 600 ~/.clipboard_history\
+
+: 1744458968:0;sudo chmod 600 ~/.clipboard_history\n[200~sudo pacman -S wl-clipboard wofi libnotify
+: 1744458973:0;sudo pacman -S wl-clipboard wofi libnotify\
+
+: 1744458995:0;ps aux | grep clipboard.sh\
+
+: 1744459197:0;chmod +x ~/.config/hypr/scripts/clipboard.sh
+: 1744459300:0;journalctl -u hyprland -f
+: 1744459327:0;~/.config/hypr/scripts/clipboard.sh monitor &
+: 1744459336:0;~/.config/hypr/scripts/clipboard.sh show
+: 1744459582:0;sudo pacman -S wl-clipboard rofi libnotify imagemagick
+: 1744459598:0;chmod +x ~/.config/hypr/scripts/clipboard.sh
+: 1744460276:0;sudo pacman -S xdg-desktop-portal-wlr
+: 1744460303:0;sudo pacman -S imagemagick
+: 1744460311:0;pkill -f "clipboard.sh monitor"\
+~/.config/hypr/scripts/clipboard.sh monitor &
+: 1744460621:0;~/.config/hypr/scripts/clipboard.sh show
+: 1744460636:0;chmod +x ~/.config/hypr/scripts/clipboard.sh
+: 1744460644:0;sudo pacman -S wl-clipboard rofi libnotify imagemagick
+: 1744460673:0;~/.config/hypr/scripts/clipboard.sh monitor
+: 1744461043:0;~/.config/hypr/scripts/clipboard.sh monitor &\
+# Copia una imagen desde cualquier aplicaciÃ³n\
+~/.config/hypr/scripts/clipboard.sh show
+: 1744461246:0;sudo pacman -S wl-copy wl-paste
+: 1744461254:0;sudo pacman -S wl-clipboard rofi libnotify imagemagick
+: 1744462150:0;sudo pacman -S xclip xsel rofi
+: 1744462717:0;~/.config/hypr/scripts/clipboard.sh monitor &\
+# Copia una imagen desde cualquier aplicaciÃ³n\
+~/.config/hypr/scripts/clipboard.sh show
+: 1744462808:0;widget.wayland.clipboard.surrogate
+: 1744462816:0;wl-paste --watch clipman store
+: 1744462826:0;sudo pacman -S clipman
+: 1744462837:0;sudo pacman -Syu wl-clipboard clipman xdg-desktop-portal-wlr
+: 1744462909:0;yay -S clipman
+: 1744463376:0;clear
+: 1744465578:0;./clipboard.sh monitor &\
+
+: 1744465648:0;sudo pacman -S bc
+: 1744465710:0;chmod +x clipboard.sh\
+
+: 1744465712:0;ls
+: 1744465741:0;l
+: 1744465789:0;cd .config/
+: 1744465790:0;ls
+: 1744465792:0;cd hypr
+: 1744465794:0;l
+: 1744465797:0;cd scripts
+: 1744465807:0;chmod +x clipboard.sh\
+
+: 1744465849:0;./clipboard.sh clear\
+
+: 1744466304:0;pkill xclip
+: 1744466309:0;xclip
+: 1744466326:0;pkill hyprshot
+: 1744466345:0;./clipboard.sh monitor &\
+
+: 1744466459:0;yay -S cliphist\
+
+: 1744467184:0;sudo yay -S cliphist\n[200~./clipboard.sh monitor
+: 1744467188:0;clear
+: 1744467190:0;./clipboard.sh monitor\
+
+: 1744467230:0;~/.config/hypr/scripts/clipboard.sh monitor
+: 1744467242:0;~/.config/hypr/scripts/clipboard.sh monitor &
+: 1744467429:0;chmod +x ~/.config/hypr/scripts/clipboard.sh
+: 1744467436:0;chmod 777 ~/.config/hypr/scripts/clipboard.sh
+: 1744467445:0;~/.config/hypr/scripts/clipboard.sh monitor &
+: 1744468546:0;sudo pacman -S grim slurp
+: 1744468671:0;sudo pacman -S grim slurp wl-clipboard\
+
+: 1744469233:0;sudo pacman -S xsel
+: 1744469964:0;ls
+: 1744469976:0;cd .config/hypr
+: 1744469977:0;ls
+: 1744469980:0;cd scripts
+: 1744470010:0;nano hyprshot-wrapper.sh
+: 1744470028:0;chmod +x hyprshot-wrapper.sh
+: 1744470264:0;rm -rf hyprshot-wrapper.sh
+: 1744470266:0;ls
+: 1744470949:0;clipboard.sh monitor &
+: 1744470988:0;mkdir /home/waltjt/.clipboard_history.tmp
+: 1744471002:0;sudo mkdir /home/waltjt/.clipboard_history.tmp
+: 1744471018:0;chmod +x /home/waltjt/.clipboard_history.tmp
+: 1744471025:0;chmod 777 /home/waltjt/.clipboard_history.tmp
+: 1744471034:0;clipboard.sh monitor &
+: 1744471838:0;ls
+: 1744471848:0;cd .config/hypr/
+: 1744471849:0;ls
+: 1744471853:0;cd scripts
+: 1744471854:0;ls
+: 1744471858:0;nano clipboard-delete.sh
+: 1744471886:0;chmod +x clipboard-delete.sh
+: 1744471946:0;LÃƒ­NEA_REAL = total_de_lÃ­neas - Ã­ndice_en_array\
+
+: 1744472012:0;nano clipboard-delete.sh
+: 1744472034:0;code clipboard-delete.sh
+: 1744493313:0;nano clipboard-monitor.sh
+: 1744493330:0;chmod +x clipboard-monitor.sh
+: 1744493411:0;~/.config/hypr/scripts/clipboard-monitor.sh &
+: 1744493848:0;nano hyprshot-launcher.sh
+: 1744493859:0;chmod +x hyprshot-launcher.sh
+: 1744494094:0;rm -rf hyprshot-launcher.sh
+: 1744494096:0;ls
+: 1744494681:0;./clipboard-history.sh monitor\
+
+: 1744494718:0;./.config/hypr/scripts/clipboard-history.sh monitor\
+
+: 1744496794:0;ls
+: 1744496804:0;.config/hypr/scripts/clipboard-history.sh monitor\
+
+: 1744496807:0;l
+: 1744496827:0;cd .config/hypr/scripts/\
+
+: 1744496828:0;ls
+: 1744496856:0;clipboard.sh monitor\
+
+: 1744496864:0;clipboard.sh monitor &\
+
+: 1744497785:0;ls
+: 1744497789:0;cd .config/hypr/scripts/\
+
+: 1744497792:0;l
+: 1744497798:0;clipboard.sh monitor &\
+
+: 1744498021:0;xsel
+: 1744498085:0;wl-copy --watch\
+
+: 1744498159:0;sudo pacman -S cliphist wl-clipboard wofi # o pamac/yay segÃºn tu sistema\
+
+: 1744498167:0;cliphist store &\
+
+: 1744498597:0;sudo pacman -S wl-clipboard xclip imagemagick wofi rofi dmenu notify-send
+: 1744498604:0;sudo pacman -S wl-clipboard xclip imagemagick wofi rofi dmenu
+: 1744498613:0;chmod +x clipboard.sh clipboard-delete.sh clipboard-monitor.sh
+: 1744498640:0;clipboard.sh monitor &
+: 1744498681:0;clipboard.sh show
+: 1744498693:0;clipboard.sh delete
+: 1744498700:0;tail -f ~/.clipboard_history
+: 1744498727:0;bash -x clipboard.sh monitor
+: 1744498752:0;rm -rf ~/.clipboard_history
+: 1744498758:0;touch ~/.clipboard_history
+: 1744498809:0;./clipboard.sh show
+: 1744498840:0;pgrep -af "clipboard.sh monitor"
+: 1744498850:0;./clipboard.sh monitor &
+: 1744499035:0;mkdir -p ~/.local/bin/\
+cp clipboard.sh ~/.local/bin/\
+chmod +x ~/.local/bin/clipboard.sh
+: 1744499063:0;clipboard.sh monitor
+: 1744499070:0;clear
+: 1744499085:0;cd ~/.local/bin/
+: 1744499086:0;ls
+: 1744499111:0;chmod +x ~/.local/bin/clipboard.sh
+: 1744499433:0;killall clipboard.sh 2>/dev/null\
+./clipboard.sh monitor &
+: 1744499440:0;cat ~/.clipboard_history
+: 1744499452:0;hyprctl reload
+: 1744499598:0;killall clipboard.sh 2>/dev/null\
+./clipboard.sh monitor &
+: 1744499600:0;cat ~/.clipboard_history
+: 1744499606:0;hyprctl reload
+: 1744499608:0;cat ~/.clipboard_history
+: 1744499843:0;killall clipboard.sh 2>/dev/null\
+./clipboard.sh monitor &
+: 1744499845:0;hyprctl reload
+: 1744499861:0;killall clipboard.sh 2>/dev/null\
+./clipboard.sh monitor &
+: 1744500514:0;mkdir -p ~/.config/wofi/\
+nano ~/.config/wofi/style.css
+: 1744500532:0;echo "Ejemplo" | wofi --dmenu --font "Monospace 18"

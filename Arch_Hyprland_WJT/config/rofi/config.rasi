@@ -1,0 +1,50 @@
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+configuration {
+    sorting-method: "normal";
+    sort: true;
+    sticky-history: false;
+
+    modi: "drun,run";
+    show-icons: true;
+    display-drun: " ";
+    font: "JetBrainsMono Nerd Font 12";
+    location: 0;
+    terminal: "kitty";
+    lines: 10;
+    columns: 1;
+    width: 50;
+    padding: 10;
+    bw: 2;
+    hide-scrollbar: true;
+}
+
+window {
+    transparency: "real";
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+    border: 2;
+}
+
+listview {
+    fixed-height: false;
+    padding: 5px;
+    scrollbar: false;
+}
+
+element {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+element selected {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+entry {
+    placeholder: "Buscar...";
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"

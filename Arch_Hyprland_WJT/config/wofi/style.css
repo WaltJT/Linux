@@ -1,0 +1,15 @@
+/* Tamaño de fuente general */
+window {
+    font-size: 16pt;   /* Tamaño base */
+}
+
+/* Estilo de los elementos del menú */
+#input, #entry {
+    font-size: 14pt;   /* Tamaño específico */
+}
+
+/* Prompt (texto superior) */
+#prompt {
+    font-size: 18pt;
+    color: #ffffff;
+}

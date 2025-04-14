@@ -1,0 +1,203 @@
+{
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "layer": "bottom", // Waybar at top layer
+    "height": 48, // Waybar height (to be removed for auto height)
+    "width": 1280, // Waybar width
+    "spacing": 1, // Gaps between modules (4px)
+    "margin_left":8,
+    "margin_right":8,
+    "margin-top":10,
+    "margin-bottom":-8,
+    //Modules layout
+
+	"modules-left": [],
+	"modules-center": [/*"custom/launcher","hyprland/window",*/"cpu","memory","disk","wlr/taskbar","hyprland/workspaces","network","pulseaudio", "battery","clock","tray","custom/updates"],
+	"modules-right": [],
+    
+    // Sourced modules
+    
+    "wlr/taskbar": {
+        "format": "{icon}"/* "{title:.8}" */,
+        "icon-size": 14,
+        "spacing": 3,
+        "on-click-middle": "close",
+        "tooltip-format": "{name}",
+        "ignore-list": [],
+        "on-click": "activate",
+        "enable-click-on-focused": true,
+        "sort-by-workspace": true,  // Ordena las ventanas dentro de cada workspace
+        "interval": 0.5  // Actualiza cada 0.5 segundos
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+            },
+        "sort-by-number": true,
+        "interval": 0.5  // Actualiza cada 0.5 segundos
+    },
+
+  	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": "{icon} {volume}%",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format-icons": {
+			"default": [
+                "<span color='#7aa2f7'> </span>", 
+                "<span color='#7aa2f7'> </span>", 
+                "<span color='#7aa2f7'> </span>"
+            ]
+		}
+	},
+    
+    // Modules configuration
+    /* "hyprland/workspaces": {
+		"disable-scroll": true,
+        "on-click": "activate",
+        "all-outputs": true,
+        "active-only": false,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": [],
+        },
+        "format": "{icon}",
+        "format-icons": {
+            "active": "<span font='12'>󰮯</span>",
+            "empty": "<span font='8'></span>",
+            "persistent": "󰊠",
+        },
+    }, */
+        
+	/* "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    }, */
+
+    /* "network": {
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ipaddr}/{cidr} ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "on-click-right": "bash ~/.config/waybar/wifi_menu.sh"
+    },
+     */
+ 
+    "network": {
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+    "format-disconnected": "⚠ Sin conexión",
+    //"format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "tooltip-format": "Click para conectarse a WiFi\nConectado a {essid} {frequency} {bandwidthTotalBits} \nIP: {ipaddr} \nInterface: {ifname}",
+    "on-click": "bash ~/.config/waybar/wifi_connect.sh", 
+    //"on-click-right": "nmcli radio wifi toggle",
+    "interval": 5
+    //"persistent": true  // Esta es la clave para que siempre esté visible
+    },
+
+	"backlight": {
+		"tooltip": false,
+		"format": " {}%",
+		"interval":1,
+        "on-scroll-up": "light -A 1",
+		"on-scroll-down": "light -U 1"
+	},
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 10
+        },
+        "format": "{icon}  <span color='#F1F1F1'>{capacity}%</span>",
+        "format-charging": "<span color='#9ece6a'></span> <span color='#F1F1F1'>{capacity}%</span>",
+        "format-plugged": " <span color='#F1F1F1'>{capacity}</span>%",
+        "format-alt": "<span color='#F1F1F1'>{time}</span> {icon}",
+        "format-icons": [
+            "<span color='#f7768e'></span>", 
+            "<span color='#e0af68'></span>", 
+            "<span color='#e0af68'></span>", 
+            "<span color='#9ece6a'></span>", 
+            "<span color='#9ece6a'></span>"
+        ]
+    },
+
+	"clock": {
+        "timezone": "America/Argentina/Buenos_Aires",
+        "format": "{:%H:%M} HS",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d-%m-%Y}"
+    },
+
+    "cpu": {
+        "interval": 15,
+        "format": "<span color='#f7768e'> </span> {}%",
+        "max-length": 10
+    },
+
+    "disk": {
+        "format": "<span color='#e0af68'> </span> {used}",
+        "interval": 1
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": "<span color='#7dcfff'> </span> {used}GiB",
+        "max-length": 10
+    },
+
+    "custom/media": {
+        "interval": 30,
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 20,
+        "format-icons": {
+            "spotify": " ",
+            "default": " "
+        },
+        "escape": true,
+        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause"
+    },
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi"
+    },
+    "custom/power":{
+        "format": "<span color='#f7768e'>⏻</span>",
+        "on-click": "wlogout"
+    },
+    "custom/updates":{
+        "format": "{} Update(s)",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "interval": 15,
+        "on-click": "kitty -e paru -Syu && notify-send 'The system has been updated' "
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    }
+    
+}
+

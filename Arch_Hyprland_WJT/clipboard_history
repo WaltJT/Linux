@@ -1,0 +1,20 @@
+text::mkdir -p ~/.config/wofi/
+nano ~/.config/wofi/style.css
+text::/* Tamaño de fuente general */
+window {
+    font-size: 16pt;   /* Tamaño base */
+}
+
+/* Estilo de los elementos del menú */
+#input, #entry {
+    font-size: 14pt;   /* Tamaño específico */
+}
+
+/* Prompt (texto superior) */
+#prompt {
+    font-size: 18pt;
+    color: #ffffff;
+}
+text::echo "Ejemplo" | wofi --dmenu --font "Monospace 18"
+text::# exec-once = hyprctl dispatch workspace 6 && flatpak run io.github.mimbrero.WhatsAppDesktop
+text::windowrulev2 = workspace 6, class:(whatsapp-desktop-linux)
