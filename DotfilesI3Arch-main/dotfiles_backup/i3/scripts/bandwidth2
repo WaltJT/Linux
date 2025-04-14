@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+# Función para detectar interfaces activas
+function active_interface {
+    grep ':' /proc/net/dev | awk -F: '{iface=$1; print iface}' | tr -d ' '
+}
+
+# Función para monitorear una interfaz
+function monitor_interface {
+    local iface=$1
+    local dt=3
+    local unit=MB
+    #local LABEL="<span font='FontAwesome'> </span>"
+
+    case "$unit" in
+        KB) bytes_per_unit=1024;;
+        MB) bytes_per_unit=$((1024 * 1024));;
+        Gb) bytes_per_unit=$((1024 * 1024 * 1024 / 8));;
+        GB) bytes_per_unit=$((1024 * 1024 * 1024));;
+        *) bytes_per_unit=1024;;
+    esac
+
+    scalar=$((bytes_per_unit * dt))
+    init_line=$(grep -E "^[ ]*$iface:" /proc/net/dev)
+
+    init_received=$(awk '{print $2}' <<< "$init_line")
+    init_sent=$(awk '{print $10}' <<< "$init_line")
+
+    # Loop para monitorear la interfaz
+    (while true; do cat /proc/net/dev; sleep "$dt"; done) |\
+        stdbuf -oL grep -E "^[ ]*$iface:" |\
+        awk -v scalar="$scalar" -v unit="$unit" -v iface="$iface" -v label="$LABEL" '
+BEGIN {old_received='"$init_received"'; old_sent='"$init_sent"'}
+{
+    received=$2; sent=$10
+    print "Raw RX:", received, "Raw TX:", sent # Debug
+    rx=(received-old_received)/scalar
+    wx=(sent-old_sent)/scalar
+    old_received=received; old_sent=sent
+    if (rx >= 0 && wx >= 0) {
+        printf "%s%s: RX %.1f %s/s | TX %.1f %s/s\n", label, iface, rx, unit, wx, unit
+        fflush(stdout)
+    }
+}'
+
+}
+
+# Seleccionar la primera interfaz disponible (solo una vez)
+iface=$(active_interface | grep -v "lo" | head -n 1)
+
+if [ -n "$iface" ]; then
+    echo "Monitoreando la interfaz: $iface"
+    monitor_interface "$iface"
+else
+    echo "No network interface detected."
+    exit 1
+fi
